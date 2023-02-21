@@ -1,4 +1,4 @@
-function MockData() {
+function MockDataLastExpenses() {
     let data = [
         {
             "name": "Expense 01",
@@ -6,7 +6,7 @@ function MockData() {
             "category": "House goods",
             "date": "2022-12-24",
             "place": "Convenience Store",
-            "amount": 35.50,
+            "amount": 235.50,
         },
         {
             "name": "Expense 02",
@@ -32,9 +32,18 @@ function MockData() {
             "place": "Online",
             "amount": 500.50,
         }
-    ]
+    ];
     
     return (data);
 }
 
-export default MockData;
+export function GraphMockData() {
+    let data = [
+        ["House goods", "Tech Equipment"],
+        [313.70, 1506]
+    ];
+    
+    return (data);
+}
+
+export default MockDataLastExpenses;
