@@ -2,7 +2,10 @@ import NavBar from "../components/Navbar";
 
 function Rules() {
     return (
-        <NavBar></NavBar>
+        <>
+            <NavBar></NavBar>
+            <h4>Rules Page</h4>
+        </>
     );
 }
 

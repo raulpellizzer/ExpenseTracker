@@ -2,7 +2,10 @@ import NavBar from "../components/Navbar";
 
 function Register() {
     return (
-        <NavBar></NavBar>
+        <>
+            <NavBar></NavBar>
+            <h4>Register Page</h4>
+        </>
     );
 }
 
