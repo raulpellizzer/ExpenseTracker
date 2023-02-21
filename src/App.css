@@ -1,8 +1,17 @@
+body {
+  margin: 5px;
+}
+
 .nav-item {
   padding-left: 1.5rem;
 }
 
-.test-custom {
+.navbar {
+  margin: .7rem;
+  border-radius: 12px;
+}
+
+.login-form {
   width: 20%;
   padding-top: 10rem;
 }
