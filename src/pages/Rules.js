@@ -1,6 +1,8 @@
+import NavBar from "../components/Navbar";
+
 function Rules() {
     return (
-        <h1>Hello from Rules page</h1>
+        <NavBar></NavBar>
     );
 }
 
