@@ -30,7 +30,7 @@ function LastExpensesGraph() {
     let yValues = graphMockData[1];
     let barColors = [
         "#b91d47",
-        "#00aba9"];
+        "#00aba9"]; 
 
     ChartJS.register(ArcElement, Tooltip, Legend);
     var data = {
