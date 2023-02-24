@@ -17,7 +17,6 @@ function Home() {
                     <div className="col-sm-2"></div>
                     <div className="col-sm-3">
                         <LastExpensesGraph></LastExpensesGraph>
-                        
                     </div>
                 </div>
             </div>
@@ -63,7 +62,7 @@ function LastExpensesGraph() {
 
     return (
         <>
-            <Pie data={data} />;
+            <Pie data={data} />
         </>
     );
 }
