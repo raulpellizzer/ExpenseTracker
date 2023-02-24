@@ -1,12 +1,14 @@
 import NavBar from "../components/Navbar";
 import MockDataLastExpenses from "../components/mock-data";
 import { GraphMockData } from "../components/mock-data";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Pie } from 'react-chartjs-2';
 
 function Home() {
+
     return (
         <>
             <NavBar></NavBar>
-
             <div className="container p-5">
                 <div className="row">
                     <div className="col-sm-7">
@@ -14,8 +16,6 @@ function Home() {
                     </div>
                     <div className="col-sm-2"></div>
                     <div className="col-sm-3">
-                        {/* Graph will appear here */}
-                        {/* <canvas id="myChart"></canvas> */}
                         <LastExpensesGraph></LastExpensesGraph>
                         
                     </div>
@@ -26,8 +26,6 @@ function Home() {
 }
 
 function LastExpensesGraph() {
-    
-    //var ctx = document.getElementById('myChart');
     let graphMockData = GraphMockData();
     let xValues = graphMockData[0];
     let yValues = graphMockData[1];
@@ -35,27 +33,37 @@ function LastExpensesGraph() {
         "#b91d47",
         "#00aba9"];
 
-    // new Chart(ctx, {
-    //     type: "pie",
-    //     data: {
-    //       labels: xValues,
-    //       datasets: [{
-    //         backgroundColor: barColors,
-    //         data: yValues
-    //       }]
-    //     },
-    //     options: {
-    //       title: {
-    //         display: true,
-    //         text: "World Wide Wine Production 2018"
-    //       }
-    //     }
-    //   });
+    ChartJS.register(ArcElement, Tooltip, Legend);
+    var data = {
+        labels: xValues,
+        datasets: [
+          {
+            label: '# per category',
+            data: yValues,
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)',
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+            ],
+            borderWidth: 1,
+          },
+        ],
+      };
 
     return (
         <>
-            {"Test: " + xValues[0]}
-            
+            <Pie data={data} />;
         </>
     );
 }
