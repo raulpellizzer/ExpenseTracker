@@ -1,10 +1,12 @@
 import NavBar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Login() {
     return (
         <>
             <NavBar></NavBar>
             <LoginForm></LoginForm>
+            <Footer></Footer>
         </>
     );
 }

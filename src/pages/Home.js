@@ -1,4 +1,5 @@
 import NavBar from "../components/Navbar";
+import Footer from "../components/Footer";
 import MockDataLastExpenses from "../components/mock-data";
 import { GraphMockData } from "../components/mock-data";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
@@ -9,17 +10,18 @@ function Home() {
     return (
         <>
             <NavBar></NavBar>
-            <div className="container p-5">
+            <div className="pt-5 m-5">
                 <div className="row">
-                    <div className="col-sm-7">
+                    <div className="col-md-6">
                         <LastExpensesGrid></LastExpensesGrid>
                     </div>
-                    <div className="col-sm-2"></div>
-                    <div className="col-sm-3">
+                    <div className="col-md-1"></div>
+                    <div className="col-md-5">
                         <LastExpensesGraph></LastExpensesGraph>
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </>
     );
 }
@@ -28,9 +30,6 @@ function LastExpensesGraph() {
     let graphMockData = GraphMockData();
     let xValues = graphMockData[0];
     let yValues = graphMockData[1];
-    let barColors = [
-        "#b91d47",
-        "#00aba9"]; 
 
     ChartJS.register(ArcElement, Tooltip, Legend);
     var data = {

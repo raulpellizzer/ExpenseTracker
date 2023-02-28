@@ -1,10 +1,12 @@
 import NavBar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Register() {
     return (
         <>
             <NavBar></NavBar>
             <RegisterForm></RegisterForm>
+            <Footer></Footer>
         </>
     );
 }

@@ -15,3 +15,20 @@ body {
   width: 20%;
   padding-top: 10rem;
 }
+
+.app-footer {
+  background-color: #e6ecf5;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+  margin-bottom: 0.3rem !important;
+  border-radius: 5px;
+}
+
+/* Study the behavior of this guy, what exactly is controlling its sizing? */
+canvas {
+  max-width: 18rem;
+  max-height: 18rem;
+}
