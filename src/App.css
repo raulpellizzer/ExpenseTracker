@@ -27,8 +27,7 @@ body {
   border-radius: 5px;
 }
 
-/* Study the behavior of this guy, what exactly is controlling its sizing? */
-canvas {
-  max-width: 18rem;
-  max-height: 18rem;
+.last-expense-pie {
+  max-width: fit-content;
+  max-height: 14rem;
 }

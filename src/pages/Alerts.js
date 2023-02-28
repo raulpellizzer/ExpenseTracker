@@ -1,14 +1,14 @@
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function Rules() {
+function Alerts() {
     return (
         <>
             <NavBar></NavBar>
-            <h4>Rules Page</h4>
+            <h4>Alerts Page</h4>
             <Footer></Footer>
         </>
     );
 }
 
-export default Rules;
+export default Alerts;

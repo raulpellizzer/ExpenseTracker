@@ -11,7 +11,8 @@ function Home() {
         <>
             <NavBar></NavBar>
             <div className="pt-5 m-5">
-                <div className="row">
+                <h5 className="ms-5 ps-4 pb-3">Latest Expenses:</h5>
+                <div className="row ms-5">
                     <div className="col-md-6">
                         <LastExpensesGrid></LastExpensesGrid>
                     </div>
@@ -61,7 +62,7 @@ function LastExpensesGraph() {
 
     return (
         <>
-            <Pie data={data} />
+            <Pie className="last-expense-pie" data={data} />
         </>
     );
 }
@@ -85,7 +86,7 @@ function LastExpensesGrid() {
     return (
         <>
             <div className="container">
-                <table className="table">
+                <table className="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">Name</th>

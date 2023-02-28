@@ -20,7 +20,7 @@ function NavBar() {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/rules">Rules</a>
+                                <a className="nav-link active" aria-current="page" href="/alerts">Alerts</a>
                             </li>
 
                             <li className="nav-item">
