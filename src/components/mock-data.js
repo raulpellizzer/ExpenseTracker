@@ -1,36 +1,36 @@
 function MockDataLastExpenses() {
     let data = [
         {
-            "name": "Expense 01",
-            "description": "My first expense",
+            "name": "Food",
+            "description": "Food for breakfast",
             "category": "House goods",
             "date": "2022-12-24",
-            "place": "Convenience Store",
-            "amount": 235.50,
+            "place": "Supermarket",
+            "amount": 46.50,
         },
         {
-            "name": "Expense 02",
-            "description": "Second expense",
+            "name": "Food",
+            "description": "Not essentials",
             "category": "House goods",
             "date": "2022-12-28",
             "place": "Supermarket",
             "amount": 78.20,
         },
         {
-            "name": "Expense 03",
-            "description": "Yet another expense",
+            "name": "Microphone",
+            "description": "Mic for live",
             "category": "Tech Equipment",
             "date": "2023-01-02",
             "place": "Online",
-            "amount": 1005.50,
+            "amount": 1200.00,
         },
         {
-            "name": "Last Expense",
-            "description": "Latest",
-            "category": "Tech Equipment",
+            "name": "Home Office",
+            "description": "Home office built",
+            "category": "House",
             "date": "2023-02-21",
             "place": "Online",
-            "amount": 500.50,
+            "amount": 5000.00,
         }
     ];
     
@@ -39,8 +39,8 @@ function MockDataLastExpenses() {
 
 export function GraphMockData() {
     let data = [
-        ["House goods", "Tech Equipment"],
-        [313.70, 1506]
+        ["House goods", "Tech Equipment", "House"],  // categories
+        [313.70, 1506, 5000.00]  // values per cat.
     ];
     
     return (data);
