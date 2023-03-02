@@ -3,7 +3,7 @@ function MockDataLastExpenses() {
         {
             "name": "Food",
             "description": "Food for breakfast",
-            "category": "House goods",
+            "category": "House Goods",
             "date": "2022-12-24",
             "place": "Supermarket",
             "amount": 46.50,
@@ -11,7 +11,7 @@ function MockDataLastExpenses() {
         {
             "name": "Food",
             "description": "Not essentials",
-            "category": "House goods",
+            "category": "House Goods",
             "date": "2022-12-28",
             "place": "Supermarket",
             "amount": 78.20,
@@ -27,7 +27,7 @@ function MockDataLastExpenses() {
         {
             "name": "Home Office",
             "description": "Home office built",
-            "category": "House",
+            "category": "House Goods",
             "date": "2023-02-21",
             "place": "Online",
             "amount": 5000.00,
@@ -39,7 +39,7 @@ function MockDataLastExpenses() {
 
 export function GraphMockData() {
     let data = [
-        ["House goods", "Tech Equipment", "House"],  // categories
+        ["House Goods", "Tech Equipment", "House"],  // categories
         [313.70, 1506, 5000.00]  // values per cat.
     ];
     
