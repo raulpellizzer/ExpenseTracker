@@ -1,14 +1,14 @@
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function SearchExpense() {
+function NewAccountingEntry() {
     return (
         <>
             <NavBar></NavBar>
-            <h4>Search Expense Page</h4>
+            <h4>Add New Accounting Entry</h4>
             <Footer></Footer>
         </>
     );
 }
 
-export default SearchExpense;
+export default NewAccountingEntry;
